@@ -1,0 +1,44 @@
+{
+  "name": "appworks-cli",
+  "description": "command line tools for appworks",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jibrahim/appworks-cli",
+  "author": {
+    "name": "Jason Ibrahim",
+    "email": "jibrahim@opentext.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jibrahim/appworks-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jibrahim/appworks-cli/issues"
+  },
+  "licenses": [
+    {
+      "type": "NONE",
+      "url": "https://github.com/jibrahim/appworks-cli/blob/master/LICENSE-NONE"
+    }
+  ],
+  "main": "lib/appworks-cli",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "~0.4.5"
+  },
+  "keywords": [],
+  "preferGlobal": "true",
+  "bin": {
+    "appworks": "lib/appworks-cli.js"
+  },
+  "dependencies": {
+    "minimist": "^1.1.2"
+  }
+}
