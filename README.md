@@ -3,25 +3,26 @@
 command line tools for appworks
 
 ## Getting Started
-Install the module with: `npm install appworks-cli`
+Install the module with: 
 
-```javascript
-var appworks_cli = require('appworks-cli');
-appworks_cli.awesome(); // "awesome"
+`npm install -g appworks-cli`
+
+create an app from a template:
+
+```shell
+appworks start --name myApp --template starter
 ```
 
 ## Documentation
-_(Coming soon)_
+Full documentation can be found at:
+
+`http://awg-docs.appworks.dev`
 
 ## Examples
 _(Coming soon)_
 
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
-
 ## Release History
-_(Nothing yet)_
+0.1.0 - start and package 
 
 ## License
-Copyright (c) 2015 Jason Ibrahim  
-Licensed under the NONE license.
+Copyright (c) 2015 OpenText Inc
