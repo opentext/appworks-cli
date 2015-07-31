@@ -41,6 +41,7 @@
   "dependencies": {
     "cordova": "^5.1.1",
     "minimist": "^1.1.2",
+    "properties-reader": "0.0.10",
     "shelljs": "^0.5.1"
   }
 }
