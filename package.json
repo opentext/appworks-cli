@@ -1,7 +1,7 @@
 {
   "name": "appworks-cli",
   "description": "command line tools for appworks",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/jibrahim/appworks-cli",
   "author": {
     "name": "Jason Ibrahim",
@@ -41,7 +41,6 @@
   "dependencies": {
     "cordova": "^5.1.1",
     "minimist": "^1.1.2",
-    "mkdirp": "^0.5.1",
     "shelljs": "^0.5.1"
   }
 }
