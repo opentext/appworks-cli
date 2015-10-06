@@ -1,23 +1,23 @@
 {
-  "name": "appworks-cli",
+  "name": "appworks",
   "description": "command line tools for appworks",
   "version": "0.1.2",
-  "homepage": "https://github.com/jibrahim/appworks-cli",
+  "homepage": "https://github.com/opentext/appworks-cli",
   "author": {
     "name": "Jason Ibrahim",
     "email": "jibrahim@opentext.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jibrahim/appworks-cli.git"
+    "url": "git://github.com/opentext/appworks-cli.git"
   },
   "bugs": {
-    "url": "https://github.com/jibrahim/appworks-cli/issues"
+    "url": "https://github.com/opentext/appworks-cli/issues"
   },
   "licenses": [
     {
       "type": "NONE",
-      "url": "https://github.com/jibrahim/appworks-cli/blob/master/LICENSE-NONE"
+      "url": "https://github.com/opentext/appworks-cli/blob/master/LICENSE-NONE"
     }
   ],
   "main": "lib/appworks-cli",
