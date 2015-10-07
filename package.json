@@ -1,7 +1,7 @@
 {
   "name": "appworks",
   "description": "command line tools for appworks",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "homepage": "https://github.com/opentext/appworks-cli",
   "author": {
     "name": "Jason Ibrahim",
@@ -40,6 +40,7 @@
   },
   "dependencies": {
     "cordova": "^5.1.1",
+    "ionic": "^1.6.5",
     "minimist": "^1.1.2",
     "properties-reader": "0.0.10",
     "shelljs": "^0.5.1",
