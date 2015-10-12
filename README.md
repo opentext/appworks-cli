@@ -3,14 +3,15 @@
 command line tools for appworks
 
 ## Getting Started
-Install the module with: 
-
-`npm install -g appworks-cli`
+Install:
+```shell
+npm install -g cordova ionic appworks
+```
 
 create an app from a template:
 
 ```shell
-appworks start --name myApp --template starter
+appworks start --name myApp --template appworks-starter
 ```
 
 ## Documentation
