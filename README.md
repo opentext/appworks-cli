@@ -20,15 +20,31 @@ https://git-scm.com/download/win
 ```shell
 npm install -g cordova ionic appworks
 ```
+## Usage
 
 ### Create an app from a template:
 
 ```shell
-appworks start --name myApp --template appworks-starter
+appworks start --name myApp --template https://github.com/opentext/appworks-app-starter
+cd myApp
 ```
 
-## Examples
-_(Coming soon)_
+### Serve the app in your browser
+```shell
+appworks serve
+```
+
+### Emulate the app using the iOS simulator
+```shell
+appworks emulate
+```
+Note: This is Mac OS X only. Additionally, your project must be a cordova based project. Make it a cordova based project by running ````cordova platform add ios````
+
+### Package your app for deployment
+```shell
+appworks package
+```
+Note: You must have an icon.png file in the root of your project for this command to execute successfully.
 
 ## Troubleshooting
 Make sure you have git installed on your machine
