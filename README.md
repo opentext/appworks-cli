@@ -27,11 +27,6 @@ npm install -g cordova ionic appworks
 appworks start --name myApp --template appworks-starter
 ```
 
-## Documentation
-Full documentation can be found at:
-
-`http://awg-docs.appworks.dev`
-
 ## Examples
 _(Coming soon)_
 
