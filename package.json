@@ -1,7 +1,7 @@
 {
   "name": "appworks",
   "description": "command line tools for appworks",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "homepage": "https://github.com/opentext/appworks-cli",
   "author": {
     "name": "Jason Ibrahim",
@@ -16,8 +16,8 @@
   },
   "licenses": [
     {
-      "type": "NONE",
-      "url": "https://github.com/opentext/appworks-cli/blob/master/LICENSE-NONE"
+      "type": "Apache 2.0",
+      "url": "https://github.com/opentext/appworks-cli/blob/master/LICENSE"
     }
   ],
   "main": "lib/appworks-cli",
