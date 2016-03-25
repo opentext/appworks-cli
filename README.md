@@ -36,6 +36,7 @@ appworks serve
 
 ### Emulate the app using the iOS simulator
 ```shell
+cordova platform add ios
 appworks build --platform ios
 appworks emulate --platform ios
 ```
@@ -43,6 +44,7 @@ Note: This is Mac OS X only. Additionally, your project must be a cordova based 
 
 ### Emulate the app using the android simulator
 ```shell
+cordova platform add android
 appworks build --platform android
 appworks emulate --platform android
 ```
