@@ -36,9 +36,16 @@ appworks serve
 
 ### Emulate the app using the iOS simulator
 ```shell
-appworks emulate
+appworks build --platform ios
+appworks emulate --platform ios
 ```
 Note: This is Mac OS X only. Additionally, your project must be a cordova based project. Make it a cordova based project by running ````cordova platform add ios````
+
+### Emulate the app using the android simulator
+```shell
+appworks build --platform android
+appworks emulate --platform android
+```
 
 ### Package your app for deployment
 ```shell
