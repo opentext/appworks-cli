@@ -16,6 +16,10 @@ On windows, download the git installer
 https://git-scm.com/download/win
 ```
 
+### Install Node.js and npm
+You must have Node version <b>5.9.1</b> or later and npm version <b>3.7.3</b> or later to use the command line tools.
+Visit <a href="https://nodejs.org/en/">nodejs.org</a> to download the latest version of Node that includes npm.
+
 ### Install the command line tools:
 ```shell
 npm install -g cordova ionic appworks
@@ -48,6 +52,7 @@ cordova platform add android
 appworks build --platform android
 appworks emulate --platform android
 ```
+Note: This you must have Android studio installed on your machine for this to work. Click <a href="http://developer.android.com/sdk/index.html">here</a> to get Android studio.
 
 ### Package your app for deployment
 ```shell
