@@ -1,7 +1,7 @@
 {
   "name": "appworks",
   "description": "command line tools for appworks",
-  "version": "0.1.22",
+  "version": "0.1.23",
   "homepage": "https://github.com/opentext/appworks-cli",
   "author": {
     "name": "Jason Ibrahim",
