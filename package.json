@@ -1,45 +1,19 @@
 {
   "name": "appworks",
   "description": "command line tools for appworks",
-  "version": "0.1.25",
-  "homepage": "https://github.com/opentext/appworks-cli",
+  "version": "0.2.0",
   "author": {
     "name": "Jason Ibrahim",
     "email": "jibrahim@opentext.com"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/opentext/appworks-cli.git"
+  "bin": {
+    "appworks": "lib/appworks-cli.js"
   },
   "bugs": {
     "url": "https://github.com/opentext/appworks-cli/issues"
   },
-  "licenses": [
-    {
-      "type": "Apache 2.0",
-      "url": "https://github.com/opentext/appworks-cli/blob/master/LICENSE"
-    }
-  ],
-  "main": "lib/appworks-cli",
-  "engines": {
-    "node": ">= 0.8.0"
-  },
-  "scripts": {
-    "pretest": "npm install",
-    "test": "node test/test"
-  },
-  "devDependencies": {
-    "grunt-contrib-jshint": "~0.6.4",
-    "grunt-contrib-nodeunit": "~0.2.0",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt": "~0.4.5"
-  },
-  "keywords": [],
-  "preferGlobal": "true",
-  "bin": {
-    "appworks": "lib/appworks-cli.js"
-  },
   "dependencies": {
+    "browser-sync": "^2.18.7",
     "chalk": "^1.1.3",
     "cordova": "^6.0.0",
     "ionic": "^1.7.14",
@@ -47,7 +21,36 @@
     "node-zip": "^1.1.1",
     "path": "^0.12.7",
     "properties-reader": "0.0.15",
+    "q": "^1.4.1",
     "shelljs": "^0.6.0",
     "wget-improved": "^1.3.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.3"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "homepage": "https://github.com/opentext/appworks-cli",
+  "keywords": [],
+  "license": "LICENSE",
+  "licenses": [
+    {
+      "type": "Apache 2.0",
+      "url": "https://github.com/opentext/appworks-cli/blob/master/LICENSE"
+    }
+  ],
+  "main": "lib/appworks-cli",
+  "preferGlobal": "true",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/opentext/appworks-cli.git"
+  },
+  "scripts": {
+    "pretest": "npm install",
+    "test": "node test/test"
   }
 }
