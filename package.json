@@ -1,7 +1,7 @@
 {
   "name": "appworks",
   "description": "command line tools for appworks",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": {
     "name": "Jason Ibrahim",
     "email": "jibrahim@opentext.com"
