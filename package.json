@@ -7,29 +7,26 @@
     "email": "jibrahim@opentext.com"
   },
   "bin": {
-    "appworks": "lib/appworks-cli.js"
+    "appworks": "lib/index.js"
   },
   "bugs": {
     "url": "https://github.com/opentext/appworks-cli/issues"
   },
   "dependencies": {
+    "@types/browser-sync": "^0.0.35",
+    "@types/chalk": "^0.4.31",
+    "@types/minimist": "^1.2.0",
     "browser-sync": "^2.18.7",
-    "chalk": "^1.1.3",
-    "cordova": "^6.0.0",
-    "ionic": "^1.7.14",
+    "chalk": "^2.0.1",
     "minimist": "^1.2.0",
     "node-zip": "^1.1.1",
     "path": "^0.12.7",
     "properties-reader": "0.0.15",
-    "q": "^1.4.1",
-    "shelljs": "^0.6.0",
+    "shelljs": "^0.7.8",
     "wget-improved": "^1.3.0"
   },
   "devDependencies": {
-    "grunt": "~0.4.5",
-    "grunt-contrib-jshint": "~0.6.4",
-    "grunt-contrib-nodeunit": "~0.2.0",
-    "grunt-contrib-watch": "~0.5.3"
+    "typescript": "^2.4.1"
   },
   "engines": {
     "node": ">= 0.8.0"
@@ -51,6 +48,7 @@
   },
   "scripts": {
     "pretest": "npm install",
-    "test": "node test/test"
+    "test": "node test/test",
+    "build": "tsc lib/index"
   }
 }
