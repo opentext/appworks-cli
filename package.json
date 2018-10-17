@@ -42,7 +42,7 @@
   "keywords": [
     "oclif"
   ],
-  "license": "MIT",
+  "license": "LICENSE",
   "main": "lib/index.js",
   "oclif": {
     "commands": "./lib/commands",
