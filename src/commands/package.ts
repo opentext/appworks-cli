@@ -23,7 +23,7 @@ packaging the 'build' directory for deployment...
     force: flags.boolean({char: 'f'}),
   }
 
-  static args = [{name: 'file'}]
+  static args = [{name: 'directory'}]
 
   async run() {
     const {args, flags} = this.parse(Start)

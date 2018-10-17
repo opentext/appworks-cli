@@ -20,7 +20,7 @@ cloning repository https://github.com/opentext/appworks-js-example-camera...
     force: flags.boolean({char: 'f'}),
   }
 
-  static args = [{name: 'file'}]
+  static args = [{name: 'repo'}]
 
   async run() {
     const {args, flags} = this.parse(Start)

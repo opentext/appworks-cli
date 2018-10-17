@@ -4,9 +4,9 @@ appworks-cli
 Command line tools for OpenText AppWorks
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/appworks-cli.svg)](https://npmjs.org/package/appworks-cli)
-[![Downloads/week](https://img.shields.io/npm/dw/appworks-cli.svg)](https://npmjs.org/package/appworks-cli)
-[![License](https://img.shields.io/npm/l/appworks-cli.svg)](https://github.com/opentext/appworks-cli/blob/master/package.json)
+[![Version](https://img.shields.io/npm/v/appworks.svg)](https://npmjs.org/package/appworks)
+[![Downloads/week](https://img.shields.io/npm/dw/appworks.svg)](https://npmjs.org/package/appworks)
+[![License](https://img.shields.io/npm/l/appworks.svg)](https://github.com/opentext/appworks-cli/blob/master/package.json)
 
 <!-- toc -->
 * [Usage](#usage)
@@ -28,28 +28,9 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`appworks hello [FILE]`](#appworks-hello-file)
 * [`appworks help [COMMAND]`](#appworks-help-command)
-
-## `appworks hello [FILE]`
-
-describe the command here
-
-```
-USAGE
-  $ appworks hello [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-
-EXAMPLE
-  $ appworks hello
-  hello world from ./src/hello.ts!
-```
-
-_See code: [src\commands\hello.ts](https://github.com/opentext/appworks-cli/blob/v1.0.0/src\commands\hello.ts)_
+* [`appworks package [DIRECTORY]`](#appworks-package-directory)
+* [`appworks start [REPO]`](#appworks-start-repo)
 
 ## `appworks help [COMMAND]`
 
@@ -67,4 +48,53 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.3/src\commands\help.ts)_
+
+## `appworks package [DIRECTORY]`
+
+Package the app in the current directory to be deployed on the AppWorks Gateway
+
+```
+USAGE
+  $ appworks package [DIRECTORY]
+
+OPTIONS
+  -d, --dir=dir  the directory to package for deployment - this directory contains your application's final javascript,
+                 html, css, images, and any other assets
+
+  -f, --force
+
+  -h, --help     show CLI help
+
+EXAMPLES
+  $ appworks package
+  packaging the 'www' directory for deployment...
+
+  $ appworks package --dir build
+  packaging the 'build' directory for deployment...
+```
+
+_See code: [src\commands\package.ts](https://github.com/opentext/appworks-cli/blob/v1.0.0/src\commands\package.ts)_
+
+## `appworks start [REPO]`
+
+Create a new appworks app from a template. Defaults to `starter`
+
+```
+USAGE
+  $ appworks start [REPO]
+
+OPTIONS
+  -f, --force
+  -h, --help               show CLI help
+  -t, --template=template  git repository to clone
+
+EXAMPLES
+  $ appworks start
+  cloning repository https://github.com/opentext/appworks-app-starter...
+
+  $ appworks start --template https://github.com/opentext/appworks-js-example-camera
+  cloning repository https://github.com/opentext/appworks-js-example-camera...
+```
+
+_See code: [src\commands\start.ts](https://github.com/opentext/appworks-cli/blob/v1.0.0/src\commands\start.ts)_
 <!-- commandsstop -->
