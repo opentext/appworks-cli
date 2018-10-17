@@ -1,64 +1,70 @@
-# appworks-cli
+appworks-cli
+============
 
-command line tools for appworks
+Command line tools for OpenText AppWorks
 
-## Getting Started
+[![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
+[![Version](https://img.shields.io/npm/v/appworks-cli.svg)](https://npmjs.org/package/appworks-cli)
+[![Downloads/week](https://img.shields.io/npm/dw/appworks-cli.svg)](https://npmjs.org/package/appworks-cli)
+[![License](https://img.shields.io/npm/l/appworks-cli.svg)](https://github.com/opentext/appworks-cli/blob/master/package.json)
 
-### Install git
+<!-- toc -->
+* [Usage](#usage)
+* [Commands](#commands)
+<!-- tocstop -->
+# Usage
+<!-- usage -->
+```sh-session
+$ npm install -g appworks-cli
+$ appworks COMMAND
+running command...
+$ appworks (-v|--version|version)
+appworks-cli/1.0.0 win32-x64 node-v8.11.2
+$ appworks --help [COMMAND]
+USAGE
+  $ appworks COMMAND
+...
+```
+<!-- usagestop -->
+# Commands
+<!-- commands -->
+* [`appworks hello [FILE]`](#appworks-hello-file)
+* [`appworks help [COMMAND]`](#appworks-help-command)
 
-On Mac, you can install git with the Xcode command line tools:
-```shell
-xcode-select --install
+## `appworks hello [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ appworks hello [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+
+EXAMPLE
+  $ appworks hello
+  hello world from ./src/hello.ts!
 ```
 
-On windows, download the git installer
+_See code: [src\commands\hello.ts](https://github.com/opentext/appworks-cli/blob/v1.0.0/src\commands\hello.ts)_
+
+## `appworks help [COMMAND]`
+
+display help for appworks
+
 ```
-https://git-scm.com/download/win
-```
+USAGE
+  $ appworks help [COMMAND]
 
-### Install Node.js and npm
-You must have Node version <b>5.9.1</b> or later and npm version <b>3.7.3</b> or later to use the command line tools.
-Visit <a href="https://nodejs.org/en/">nodejs.org</a> to download the latest version of Node that includes npm.
+ARGUMENTS
+  COMMAND  command to show help for
 
-### Install the command line tools:
-```shell
-npm install -g cordova ionic appworks
-```
-## Usage
-
-### Create an app from a template:
-
-```shell
-appworks start --name myApp --template https://github.com/opentext/appworks-app-starter
-cd myApp
+OPTIONS
+  --all  see all commands in CLI
 ```
 
-### Serve the app in your browser
-```shell
-appworks serve
-```
-
-### Package your app for deployment
-```shell
-appworks package
-```
-Note: You must have an icon.png file in the root of your project for this command to execute successfully.
-
-## Troubleshooting
-Make sure you have git installed on your machine
-
-On Mac, you can install git with the Xcode command line tools.
-
-Open terminal and paste in the following:
-
-```shell
-xcode-select --install
-```
-
-On windows, download the git installer
-```
-https://git-scm.com/download/win
-```
-
-## License
-Copyright (c) 2015 OpenText Inc
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.3/src\commands\help.ts)_
+<!-- commandsstop -->
