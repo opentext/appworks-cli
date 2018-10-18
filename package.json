@@ -11,6 +11,9 @@
     "@oclif/command": "^1",
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^2",
+    "@types/nodegit": "^0.22.3",
+    "cli-ux": "^4.9.1",
+    "nodegit": "^0.22.2",
     "tslib": "^1"
   },
   "devDependencies": {
