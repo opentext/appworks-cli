@@ -1,27 +1,23 @@
 import {Command, flags} from '@oclif/command'
 import cli from 'cli-ux'
 import * as fs from 'fs'
+import * as ora from 'ora'
 import * as os from 'os'
 import * as path from 'path'
 
-interface AppWorksProps {
-  displayName: string
-  description: string
-  version: string
-  awgPlatformVersion: string
-  type: string
-  release: string
-}
+import {AppWorksProps} from '../interfaces/appworks-props'
+
+const Git = require('nodegit')
 
 export default class Start extends Command {
   static description = 'Create a new appworks app from a template. Defaults to `starter`'
 
   static examples = [
     `$ appworks start --name MyApp
-cloning repository https://github.com/opentext/appworks-app-starter...
+Cloning repo https://github.com/opentext/appworks-app-starter into MyApp
 `,
     `$ appworks start --name MyApp --template https://github.com/opentext/appworks-js-example-camera
-cloning repository https://github.com/opentext/appworks-js-example-camera...
+cloning repo https://github.com/opentext/appworks-js-example-camera into MyApp
 `,
   ]
 
@@ -85,7 +81,6 @@ cloning repository https://github.com/opentext/appworks-js-example-camera...
   }
 
   private static async cloneRepo(repoUrl: string, directory: string): Promise<void> {
-    const Git = require('nodegit')
     return Git.Clone(repoUrl, directory)
   }
 
@@ -114,15 +109,16 @@ cloning repository https://github.com/opentext/appworks-js-example-camera...
     const version = Start.getVersion(flags)
     const release = Start.getRelease(flags)
     const awgPlatformVersion = Start.getAwgPlatformVersion(flags)
-    this.log(`Creating AppWorks app "${name}", version ${version}, description "${description}"`)
+
+    const spinnerLogger = ora(`Creating AppWorks app "${name}", version ${version}, description "${description}"`).start()
 
     const directory = Start.createAppDirectory(name)
 
-    this.log(`Cloning repo ${template} into ${directory}...`)
+    spinnerLogger.text = `Cloning repo ${template} into ${directory}...`
     await Start.cloneRepo(template, directory)
-    this.log('Done')
+    spinnerLogger.text = 'Done'
 
-    this.log('Creating app.properties...')
+    spinnerLogger.text = 'Creating app.properties'
     const props: AppWorksProps = {
       displayName: name,
       type: 'app',
@@ -132,7 +128,9 @@ cloning repository https://github.com/opentext/appworks-js-example-camera...
       awgPlatformVersion,
     }
     await Start.createPropertiesFile(props, directory)
-    this.log('Done')
+    spinnerLogger.text = 'Done'
+
+    spinnerLogger.stop()
 
     this.log(`${name} successfully created`)
   }

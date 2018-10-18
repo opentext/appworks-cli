@@ -19,7 +19,7 @@ $ npm install -g appworks-cli
 $ appworks COMMAND
 running command...
 $ appworks (-v|--version|version)
-appworks-cli/1.0.0 win32-x64 node-v8.11.2
+appworks-cli/1.0.0 darwin-x64 node-v8.11.3
 $ appworks --help [COMMAND]
 USAGE
   $ appworks COMMAND
@@ -47,7 +47,7 @@ OPTIONS
   --all  see all commands in CLI
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.3/src\commands\help.ts)_
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.3/src/commands/help.ts)_
 
 ## `appworks package [DIRECTORY]`
 
@@ -58,22 +58,23 @@ USAGE
   $ appworks package [DIRECTORY]
 
 OPTIONS
-  -d, --dir=dir  the directory to package for deployment - this directory contains your application's final javascript,
-                 html, css, images, and any other assets
-
   -f, --force
+  -h, --help       show CLI help
 
-  -h, --help     show CLI help
+  -i, --from=from  the directory to package for deployment - this directory contains your application's final
+                   javascript, html, css, images, and any other assets. default is www
+
+  -o, --to=to      the directory to store the packaged bundle. default is package
 
 EXAMPLES
   $ appworks package
   packaging the 'www' directory for deployment...
 
-  $ appworks package --dir build
+  $ appworks package --from build --to dist
   packaging the 'build' directory for deployment...
 ```
 
-_See code: [src\commands\package.ts](https://github.com/opentext/appworks-cli/blob/v1.0.0/src\commands\package.ts)_
+_See code: [src/commands/package.ts](https://github.com/opentext/appworks-cli/blob/v1.0.0/src/commands/package.ts)_
 
 ## `appworks start [REPO]`
 
@@ -84,17 +85,21 @@ USAGE
   $ appworks start [REPO]
 
 OPTIONS
-  -f, --force
-  -h, --help               show CLI help
-  -t, --template=template  git repository to clone
+  -a, --awgPlatformVersion=awgPlatformVersion  AppWorks Gateway platform version of your project
+  -d, --description=description                description of your project
+  -h, --help                                   show CLI help
+  -n, --name=name                              name of your new project
+  -r, --release=release                        release number of your project
+  -t, --template=template                      git repository to clone
+  -v, --version=version                        version number of your project
 
 EXAMPLES
-  $ appworks start
+  $ appworks start --name MyApp
   cloning repository https://github.com/opentext/appworks-app-starter...
 
-  $ appworks start --template https://github.com/opentext/appworks-js-example-camera
+  $ appworks start --name MyApp --template https://github.com/opentext/appworks-js-example-camera
   cloning repository https://github.com/opentext/appworks-js-example-camera...
 ```
 
-_See code: [src\commands\start.ts](https://github.com/opentext/appworks-cli/blob/v1.0.0/src\commands\start.ts)_
+_See code: [src/commands/start.ts](https://github.com/opentext/appworks-cli/blob/v1.0.0/src/commands/start.ts)_
 <!-- commandsstop -->
