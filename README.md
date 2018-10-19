@@ -29,7 +29,7 @@ USAGE
 # Commands
 <!-- commands -->
 * [`appworks help [COMMAND]`](#appworks-help-command)
-* [`appworks package [DIRECTORY]`](#appworks-package-directory)
+* [`appworks package`](#appworks-package)
 * [`appworks start [REPO]`](#appworks-start-repo)
 
 ## `appworks help [COMMAND]`
@@ -49,29 +49,29 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.3/src/commands/help.ts)_
 
-## `appworks package [DIRECTORY]`
+## `appworks package`
 
 Package the app in the current directory to be deployed on the AppWorks Gateway
 
 ```
 USAGE
-  $ appworks package [DIRECTORY]
+  $ appworks package
 
 OPTIONS
   -f, --force
   -h, --help       show CLI help
 
   -i, --from=from  the directory to package for deployment - this directory contains your application's final
-                   javascript, html, css, images, and any other assets. default is www
+                   javascript, html, css, images, and any other assets. default is "www"
 
-  -o, --to=to      the directory to store the packaged bundle. default is package
+  -o, --to=to      the directory to store the packaged bundle. default is "package"
 
 EXAMPLES
   $ appworks package
-  packaging the 'www' directory for deployment...
+  (packages the 'www' directory for deployment)
 
   $ appworks package --from build --to dist
-  packaging the 'build' directory for deployment...
+  (packages the 'build' directory for deployment)
 ```
 
 _See code: [src/commands/package.ts](https://github.com/opentext/appworks-cli/blob/v1.0.0/src/commands/package.ts)_
@@ -95,10 +95,10 @@ OPTIONS
 
 EXAMPLES
   $ appworks start --name MyApp
-  cloning repository https://github.com/opentext/appworks-app-starter...
+  Cloning repo https://github.com/opentext/appworks-app-starter into MyApp
 
   $ appworks start --name MyApp --template https://github.com/opentext/appworks-js-example-camera
-  cloning repository https://github.com/opentext/appworks-js-example-camera...
+  cloning repo https://github.com/opentext/appworks-js-example-camera into MyApp
 ```
 
 _See code: [src/commands/start.ts](https://github.com/opentext/appworks-cli/blob/v1.0.0/src/commands/start.ts)_
