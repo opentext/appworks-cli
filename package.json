@@ -3,6 +3,7 @@
   "description": "Command line tools for OpenText AppWorks",
   "version": "16.7.0",
   "author": "Jason Ibrahim, OpenText",
+  "license": "Apache-2.0",
   "bin": {
     "appworks": "./bin/run"
   },
@@ -53,7 +54,6 @@
   "keywords": [
     "oclif"
   ],
-  "license": "Apache-2.0",
   "main": "lib/index.js",
   "oclif": {
     "commands": "./lib/commands",

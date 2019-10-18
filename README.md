@@ -20,7 +20,7 @@ $ npm install -g appworks-cli
 $ appworks COMMAND
 running command...
 $ appworks (-v|--version|version)
-appworks-cli/1.0.1 darwin-x64 node-v10.15.3
+appworks-cli/16.7.0 darwin-x64 node-v10.15.3
 $ appworks --help [COMMAND]
 USAGE
   $ appworks COMMAND
@@ -75,7 +75,7 @@ EXAMPLES
   (packages the 'build' directory for deployment)
 ```
 
-_See code: [src/commands/package.ts](https://github.com/opentext/appworks-cli/blob/v1.0.1/src/commands/package.ts)_
+_See code: [src/commands/package.ts](https://github.com/opentext/appworks-cli/blob/v16.7.0/src/commands/package.ts)_
 
 ## `appworks start [REPO]`
 
@@ -102,7 +102,7 @@ EXAMPLES
   cloning repo https://github.com/opentext/appworks-js-example-camera into MyApp
 ```
 
-_See code: [src/commands/start.ts](https://github.com/opentext/appworks-cli/blob/v1.0.1/src/commands/start.ts)_
+_See code: [src/commands/start.ts](https://github.com/opentext/appworks-cli/blob/v16.7.0/src/commands/start.ts)_
 <!-- commandsstop -->
 
 <!-- changelogstart -->
