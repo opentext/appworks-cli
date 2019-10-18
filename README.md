@@ -11,6 +11,7 @@ Command line tools for OpenText AppWorks
 <!-- toc -->
 * [Usage](#usage)
 * [Commands](#commands)
+* [Changelog](#changelog)
 <!-- tocstop -->
 # Usage
 <!-- usage -->
@@ -19,7 +20,7 @@ $ npm install -g appworks-cli
 $ appworks COMMAND
 running command...
 $ appworks (-v|--version|version)
-appworks-cli/1.0.0 darwin-x64 node-v8.11.3
+appworks-cli/1.0.1 darwin-x64 node-v10.15.3
 $ appworks --help [COMMAND]
 USAGE
   $ appworks COMMAND
@@ -47,7 +48,7 @@ OPTIONS
   --all  see all commands in CLI
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.3/src/commands/help.ts)_
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.2.1/src/commands/help.ts)_
 
 ## `appworks package`
 
@@ -74,7 +75,7 @@ EXAMPLES
   (packages the 'build' directory for deployment)
 ```
 
-_See code: [src/commands/package.ts](https://github.com/opentext/appworks-cli/blob/v1.0.0/src/commands/package.ts)_
+_See code: [src/commands/package.ts](https://github.com/opentext/appworks-cli/blob/v1.0.1/src/commands/package.ts)_
 
 ## `appworks start [REPO]`
 
@@ -101,5 +102,12 @@ EXAMPLES
   cloning repo https://github.com/opentext/appworks-js-example-camera into MyApp
 ```
 
-_See code: [src/commands/start.ts](https://github.com/opentext/appworks-cli/blob/v1.0.0/src/commands/start.ts)_
+_See code: [src/commands/start.ts](https://github.com/opentext/appworks-cli/blob/v1.0.1/src/commands/start.ts)_
 <!-- commandsstop -->
+
+<!-- changelogstart -->
+# Changelog
+
+## 16.7.0
+* Updated dependencies to latest version as of October 17th 2019 as several were either no longer available or contained deprecations causing errors when performing an `npm install appworks` command
+<!-- changelogstop -->

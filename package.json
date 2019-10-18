@@ -1,45 +1,44 @@
 {
   "name": "appworks-cli",
   "description": "Command line tools for OpenText AppWorks",
-  "version": "1.0.0",
-  "author": "Jason Ibrahim",
+  "version": "16.7.0",
+  "author": "Jason Ibrahim, OpenText",
   "bin": {
     "appworks": "./bin/run"
   },
   "bugs": "https://github.com/opentext/appworks-cli/issues",
   "dependencies": {
-    "@oclif/command": "^1",
-    "@oclif/config": "^1",
-    "@oclif/plugin-help": "^2",
-    "@types/archiver": "^2.1.2",
-    "@types/ora": "^1.3.4",
-    "archiver": "^3.0.0",
-    "cli-ux": "^4.9.1",
-    "nodegit": "^0.22.2",
-    "ora": "^3.0.0",
-    "properties-reader": "^0.0.16",
-    "rimraf": "^2.6.2",
-    "tslib": "^1",
-    "uuid": "^3.3.2"
+    "@oclif/command": "^1.5.19",
+    "@oclif/config": "^1.13.3",
+    "@oclif/plugin-help": "^2.2.1",
+    "@types/archiver": "^3.0.0",
+    "@types/ora": "^3.2.0",
+    "archiver": "^3.1.1",
+    "cli-ux": "^5.3.2",
+    "nodegit": "^0.26.2",
+    "ora": "^4.0.2",
+    "properties-reader": "^0.3.1",
+    "rimraf": "^3.0.0",
+    "tslib": "^1.10.0",
+    "uuid": "^3.3.3"
   },
   "devDependencies": {
-    "@oclif/dev-cli": "^1",
-    "@oclif/test": "^1",
+    "@oclif/dev-cli": "^1.22.2",
+    "@oclif/test": "^1.2.5",
     "@oclif/tslint": "^3",
-    "@types/chai": "^4",
-    "@types/mocha": "^5",
-    "@types/node": "^10",
-    "@types/nodegit": "^0.22.3",
+    "@types/chai": "^4.2.3",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.11.1",
     "@types/properties-reader": "^0.0.1",
     "@types/rimraf": "^2.0.2",
-    "@types/uuid": "^3.4.4",
+    "@types/uuid": "^3.4.5",
     "chai": "^4",
-    "globby": "^8",
-    "mocha": "^5",
-    "nyc": "^13",
-    "ts-node": "^7",
-    "tslint": "^5",
-    "typescript": "^3.0"
+    "globby": "^10.0.1",
+    "mocha": "^6.2.1",
+    "nyc": "^14.1.1",
+    "ts-node": "^8.4.1",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.4"
   },
   "engines": {
     "node": ">=8.0.0"
@@ -54,7 +53,7 @@
   "keywords": [
     "oclif"
   ],
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "main": "lib/index.js",
   "oclif": {
     "commands": "./lib/commands",

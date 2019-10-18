@@ -33,7 +33,7 @@ cloning repo https://github.com/opentext/appworks-js-example-camera into MyApp
 
   static args = [{name: 'repo'}]
 
-  private static defaultTemplate = 'https://github.com/opentext/appworks-app-starter'
+  private static readonly defaultTemplate = 'https://github.com/opentext/appworks-app-starter'
 
   private static async getName(flags: any): Promise<string> {
     let name = flags.name

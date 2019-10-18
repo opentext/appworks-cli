@@ -2,7 +2,7 @@ import {Command, flags} from '@oclif/command'
 import * as archiver from 'archiver'
 import * as fs from 'fs'
 import * as ora from 'ora'
-import * as os from 'os';
+import * as os from 'os'
 import * as path from 'path'
 import * as PropertiesReader from 'properties-reader'
 import * as rimraf from 'rimraf'
@@ -46,11 +46,11 @@ export default class Package extends Command {
     }),
   }
 
-  private static mobileZipFileName = 'mobile.zip'
-  private static iconFileName = 'icon.png'
-  private static propertiesFileName = 'app.properties'
-  private static stagingAreaDirName = uuid()
-  private static requiredProperties = [
+  private static readonly mobileZipFileName = 'mobile.zip'
+  private static readonly iconFileName = 'icon.png'
+  private static readonly propertiesFileName = 'app.properties'
+  private static readonly stagingAreaDirName = uuid()
+  private static readonly requiredProperties = [
     Properties.displayName,
     Properties.awgPlatformVersion,
     Properties.description,
@@ -147,6 +147,8 @@ export default class Package extends Command {
       archive.pipe(output)
       archive.directory(directory, '')
       archive.finalize()
+        .then(() => {})
+        .catch(err => reject(err))
     })
   }
 
@@ -175,6 +177,8 @@ export default class Package extends Command {
       archive.file(propertiesFile, {name: Package.propertiesFileName})
 
       archive.finalize()
+        .then(() => {})
+        .catch(err => reject(err))
     })
   }
 
